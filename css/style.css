@@ -1,8 +1,24 @@
+.default {
+    cursor: default;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+#header-text-content {
+    display: flex;
+    flex-direction: column;
+}
+.flex-items {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 #header-color {
     background-color: rgb(117, 78, 249);
 }
 header {
-    height: 740px;
+    height: 738.79px;
 }
 #header-text-content {
     height: 725px;
@@ -29,6 +45,15 @@ header {
 #social-media {
     margin-top: 170px;
     margin-bottom: -200px;
+    position: relative;
+}
+.rotate {
+    transform: rotate(90deg);
+    background-color: white;
+    position: absolute;
+    color: rgb(108, 85, 201);
+    width: 250px;
+    font-size: x-large;
 }
 .navbar {
     margin-left: 5%;
@@ -44,21 +69,7 @@ header {
     cursor: pointer;
     border-radius: 40px;
 }
-.rotate {
-    transform: rotate(90deg);
-    background-color: white;
-    position: absolute;
-    color: rgb(108, 85, 201);
-    width: 250px;
-    font-size: x-large;
-}
-#logos {
-    content: url(../img/in.png);
-    content: url(../img/twitter.jpg);
-    content: url(../img/insta.jpg);
-    height: 10%;
-    width: 10%;
-}
+
 h1 {
     margin-right: 30%;
 }
@@ -121,4 +132,8 @@ button:hover {
 .button-img {
     height: 20px;
     width: auto;
+}
+.aDecoration, .aDecoration:hover, .aDecoration:active, .aDecoration:visited, .aDecoration:focus {
+    text-decoration: none;
+    color: black;
 }
